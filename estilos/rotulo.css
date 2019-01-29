@@ -1,0 +1,188 @@
+#rotulo{
+    position: relative;
+    width:  100vw;
+    height: 100vw;
+    background-image: url("../imagenes/forest.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+
+
+}
+
+#ellipse-container {
+
+    position: absolute;
+    width:  50%;
+    height: 50%;
+    border-radius: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+#ellipse-container .greeting {
+    position: absolute;
+    padding: 0;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+  
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-size: 180px;
+    font-weight: 400;
+    opacity: .5;
+    z-index: 2;
+}
+
+
+
+
+
+.ellipse {    
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    border-style: solid;
+}
+
+.ellipse_outer{
+ 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-width: 5px;
+    border-color :rgba(9, 56, 62, .1);
+    animation:  orbita 15s ease-in-out infinite;
+}
+
+.ellipse_outer::after{
+    
+    content: "";
+    background-image: url("../imagenes/dial.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 85%;
+    height: 85%;
+    color: #000;
+    opacity: 0.8;
+}
+
+.ellipse_orbit{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+    border-color: #09383E;
+    top:180px;
+}
+
+.ellipse_orbit::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #09383E;
+    border-radius: 50%;
+
+  
+}
+
+.ellipse_outer-thick{
+    position: absolute;
+    top:-2px;
+    bottom: -2px;
+    width: 100%;
+    height: 100%;
+    border-color: #09383E transparent;
+    border-width: 5px;
+    animation:  orbita_thick 15s ease-in-out infinite;
+    
+}
+
+
+@keyframes orbita {
+    0%{
+        transform: rotate(-45deg);
+
+    }
+    100%{
+        transform: rotate(-405deg);
+
+    }
+
+}
+
+@keyframes orbita_thick {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+@media only screen and (max-width: 920px){
+
+    #ellipse-container .greeting {
+    font-size: 120px;
+
+}
+
+}
+
+
+@media only screen and (max-width: 700px){
+
+    #ellipse-container .greeting {
+    font-size: 90px;
+
+}
+
+}
+@media only screen and (max-width: 570px){
+
+    #ellipse-container .greeting {
+    font-size: 45px;
+
+}
+
+}
+@media only screen and (max-width: 520px){
+
+.ellipse_orbit{
+    top :125px
+}
+    
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+

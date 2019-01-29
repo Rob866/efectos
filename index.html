@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos/all.css">
+    <title>Web Design</title>
+</head>
+<body>
+
+    <!--header-->
+
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="" width="100%" height="50%">
+        </div>
+        <div class="amburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+ 
+    <!--banner-->
+    <div id="home" class="banner">
+            
+           
+            <div class="mensaje">
+                    <div class="tree">
+                            <img src="imagenes/tree.png" alt="" width="150px" height="250px">
+                        </div>
+                    <div class="imagen">
+                            <img src="imagenes/music2.png" alt="" width="250px" height="150px">
+                    </div>
+                    <div class="text">
+                        <p>fabrice chapelliére</p>
+                        <div class="detail">Photographer</div>
+                    </div>
+                    <div class="go">
+                        <span>my work</span>
+                    </div>
+
+                
+            </div>
+
+             
+    </div>
+    <!--menu-->
+    <div class="full-menu">
+            <div class="fullmenu-content">
+                <ul class="page-menu">
+                    
+                    
+                    <li><a class="accion" href="#home" data-text='Home'>Home</a></li>
+                    <li><a class="accion" href="#about" data-text='About'>About</a></li>
+                    <li><a class="accion" href="#portafolio" data-text='Portafolio'>Portafolio</a></li>
+                    <li><a class="accion" href="#rotulo" data-text='Contact'>Contact</a></li>
+                    <li class="social">
+                         <a href="#"><i class="fab fa-twitter"></i></a>
+                         <a href="#"><i class="fab fa-instagram"></i></a>
+                         <a href="#"><i class="fab fa-dribbble"></i></a>
+                         <a href="#"><i class="fab fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#0" class="modal-close"></a>
+    </div>
+    <!--about-->
+    <div  id="about">
+        <div class="fila">
+            <div class="about-img">
+                <img  class="shape" src="imagenes/about_tringle.png" alt="">
+                <img  class="man" src="imagenes/about_man.png" alt="">
+            </div>
+
+            <div class="about-right">
+
+                <h2>About ME</h2>
+                <p class="p-first">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        , when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                         It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                         with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                </p>
+                <p class="p-second">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                         , when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                          with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+
+                <div class="link-social">
+                    <p>Contactame</p>     
+                </div>
+
+                <ul class="about-links">
+                    <li><a href=""><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href=""><i class="fab fa-github-alt"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+   <!--portafolio--> 
+    <div id="portafolio">
+        <div class="titulo">
+            <span id="clasic">Clasico</span>
+            <span id="subreal">Subreal</span>
+            <span id="mistery">Misterio</span>
+        </div>
+         <div class="wrapper">
+                <div class="box1" data-text='imagina'></div>
+                <div class="box2" data-text='transforma'></div>
+                <div class="box3" data-text='crea'></div>
+                <div class="box4" data-text='inova'></div>
+                <div class="box5" data-text='trasciende'></div>
+
+         </div>
+    </div>
+
+  <!--Efecto rotacion-->
+
+  <div id="rotulo">
+        <div  id="ellipse-container">
+                <h2 class="greeting">Explora</h2>
+         
+                <div class="ellipse ellipse_outer">
+                  <div class="ellipse ellipse_orbit">
+                </div>
+                  
+                </div>
+                <div class="ellipse  ellipse_outer-thick">
+                </div>
+        </div>
+
+  </div>
+
+    <div class="cd-transition-layer visible opening"> 
+            <div class="bg-layer"></div>
+    </div><!-- Ink Transition -->
+    <div class="scroll-btn">
+        <a href="">
+            <span class="mouse">
+                <span></span>
+            </span>
+        </a>
+        </div>    
+    <a href="#" class="arrow"><i class="fas fa-angle-up"></i></a>
+   
+
+            <script src="js/jquery-2.1.4.min.js"></script> 
+            <script src="js/main.js"></script>
+  
+
+</body>
+</html>
